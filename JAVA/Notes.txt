@@ -1,0 +1,48 @@
+couche entite
+couche service (jointure, crud, controle de saisie ...)
+
+sceneBuilder outil graphique pour faire les interfaces graphiques 
+
+tools - OPTIONS - java - javaFx ken ma thetech scenEBuilder hot el chemin
+
+package interface - new - other - javaFx - empty Fx - fel .fxml double click -> scene builder -> 
+
+
+voir comment charger un fxml
+
+https://www.jmdoudoux.fr/java/dej/chap-jdbc.htm
+
+
+API :
+Mail :
+https://www.youtube.com/watch?v=A7HAB5whD6I
+
+METHODES -----------------------------------
+
+talwin bouton 
+
+btnRet.setStyle("-fx-background-color: #d6c5cf; ");
+
+
+Alerte
+
+     private void showAlertWithoutHeaderText() {
+        Alert alert = new Alert(AlertType.INFORMATION);
+        alert.setTitle("Ajout");
+ 
+        // Header Text: null
+        alert.setHeaderText(null);
+        alert.setContentText("evenement ajoute avec succes!");
+ 
+        alert.showAndWait();
+    }
+
+
+Exemple utilisation : 
+
+        Evenement e = new Evenement(idc,inputNomEvt.getText(),inDesc.getText(),"http:///localhost//javafx//"+name,DateS+" "+horS);
+        se.ajouter1(e);
+        showAlertWithoutHeaderText();
+
+
+MAIL OU CORE LEZEM THOTHOM FEL DESKTOP BECH YEKHDEM
