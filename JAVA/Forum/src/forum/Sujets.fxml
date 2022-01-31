@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="965.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forum.SujetsController">
+   <children>
+      <Pane prefHeight="173.0" prefWidth="980.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="130.0" layoutY="44.0" text="Ouibike" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="105.0" text="Forum" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imV" fitHeight="150.0" fitWidth="200.0" layoutX="738.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="13.0" layoutY="226.0" prefHeight="345.0" prefWidth="822.0">
+        <columns>
+   
+          <TableColumn fx:id="sujet" prefWidth="438.4000062942505" text="Sujet" />
+        
+            <TableColumn fx:id="createdAt" minWidth="0.0" prefWidth="99.20001220703125" text="Date d'ajout" />
+  
+            <TableColumn fx:id="nbJ" prefWidth="25.5999755859375" />
+        </columns>
+      </TableView>
+      <Label layoutX="23.0" layoutY="190.0" text="Tous les sujets">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCateg" layoutX="856.0" layoutY="541.0" mnemonicParsing="false" onAction="#Bcategories" text="Categories" />
+      <Button fx:id="btnDemandes" layoutX="856.0" layoutY="468.0" mnemonicParsing="false" onAction="#Bdemandes" text="Demandes" />
+      <Pagination fx:id="pagination" layoutX="8.0" layoutY="218.0" maxPageIndicatorCount="3" prefHeight="404.0" prefWidth="838.0" />
+      <Button fx:id="chart" layoutX="867.0" layoutY="316.0" mnemonicParsing="false" onAction="#VoirChart" style="-fx-background-color: #ccccff;" text="Chart" />
+      <ImageView fx:id="imVAjout" fitHeight="55.0" fitWidth="55.0" layoutX="867.0" layoutY="377.0" onMouseClicked="#ajoutS2" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imvH" fitHeight="22.0" fitWidth="22.0" layoutX="550.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imvSearch" fitHeight="38.0" fitWidth="38.0" layoutX="797.0" layoutY="182.0" onMouseClicked="#search2" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="textFieldSearch" layoutX="579.0" layoutY="184.0" onAction="#search" prefHeight="27.0" prefWidth="214.0" promptText="Ecrire un titre ..." />
+      <ImageView fx:id="imvLog" fitHeight="38.0" fitWidth="38.0" layoutX="13.0" layoutY="579.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="forum" fitHeight="38.0" fitWidth="38.0" layoutX="65.0" layoutY="579.0" onMouseClicked="#forum" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

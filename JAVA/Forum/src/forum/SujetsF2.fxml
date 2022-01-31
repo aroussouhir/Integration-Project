@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="943.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forum.SujetsF2Controller">
+   <children>
+      <Pane prefHeight="94.0" prefWidth="943.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="19.0" prefWidth="165.0" text="Ouibike" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="58.0" text="Forum" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="78.0" fitWidth="129.0" layoutX="792.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../LOGO.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ListView fx:id="table" layoutX="12.0" layoutY="167.0" onMouseClicked="#voir" prefHeight="402.0" prefWidth="918.0" style="-fx-cursor: #F8F8FF;" />
+      <ToolBar layoutY="94.0" prefHeight="19.0" prefWidth="943.0" style="-fx-background-color: #fffff4;">
+        <items>
+            <ImageView fx:id="imvForum" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#accueil" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="liste" onAction="#voirListe" prefHeight="26.0" prefWidth="261.0" promptText="Listes Commentaires" style="-fx-background-color: #ffd135;" />
+        </items>
+      </ToolBar>
+      <Pagination fx:id="pagination" layoutX="9.0" layoutY="162.0" maxPageIndicatorCount="3" prefHeight="457.0" prefWidth="924.0" />
+      <ImageView fx:id="imvMobile" fitHeight="37.0" fitWidth="37.0" layoutX="12.0" layoutY="573.0" onMouseClicked="#appMobile" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

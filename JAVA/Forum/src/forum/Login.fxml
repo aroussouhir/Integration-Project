@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="943.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forum.LoginController">
+   <children>
+      <Pane prefHeight="173.0" prefWidth="980.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="130.0" layoutY="44.0" text="Ouibike" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="ImV" fitHeight="150.0" fitWidth="200.0" layoutX="697.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../LOGO.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="227.0" layoutY="336.0" prefHeight="26.0" prefWidth="59.0" text="Nom :" textFill="#7907aa">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="152.0" layoutY="401.0" prefHeight="28.0" prefWidth="142.0" text="Mot de passe :" textFill="#7907aa">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEntrer" alignment="CENTER" layoutX="400.0" layoutY="477.0" mnemonicParsing="false" onAction="#entrer" prefHeight="34.0" prefWidth="142.0" style="-fx-background-color: #ffbd2e;" text="Entrer " />
+      <TextField fx:id="nomUser" layoutX="335.0" layoutY="333.0" prefHeight="34.0" prefWidth="260.0" />
+      <TextField fx:id="email" layoutX="335.0" layoutY="398.0" prefHeight="34.0" prefWidth="260.0" />
+      <Label fx:id="labelErreur" layoutX="356.0" layoutY="512.0" prefHeight="28.0" prefWidth="230.0" textFill="#ea1010" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imV2" fitHeight="109.0" fitWidth="142.0" layoutX="401.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

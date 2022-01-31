@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="681.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forum.VoirImgController">
+   <children>
+      <ImageView fx:id="imV" fitHeight="466.0" fitWidth="608.0" layoutX="37.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imvG" fitHeight="30.0" fitWidth="30.0" layoutX="7.0" layoutY="246.0" onMouseClicked="#gauche" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imvD" fitHeight="30.0" fitWidth="30.0" layoutX="645.0" layoutY="246.0" onMouseClicked="#droite" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

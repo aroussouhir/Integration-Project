@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Pagination?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="943.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forum.SujetsFController">
+   <children>
+      <Pane prefHeight="94.0" prefWidth="943.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="19.0" prefWidth="165.0" text="Ouibike" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="47.0" layoutY="58.0" text="Forum" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="78.0" fitWidth="129.0" layoutX="792.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../LOGO.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ListView fx:id="table" layoutX="12.0" layoutY="167.0" onMouseClicked="#voir" prefHeight="402.0" prefWidth="918.0" style="-fx-cursor: #F8F8FF;" />
+      <ToolBar layoutY="94.0" prefHeight="19.0" prefWidth="943.0" style="-fx-background-color: #fffff4;">
+        <items>
+            <ImageView fx:id="imvForum" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#accueil" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imvAjout" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#ajouter2" pickOnBounds="true" preserveRatio="true" />
+            <ComboBox fx:id="categorie" nodeOrientation="LEFT_TO_RIGHT" onAction="#cat" prefWidth="150.0" promptText="Categories" style="-fx-background-color: #ffd135;" />
+            <ComboBox fx:id="liste" nodeOrientation="LEFT_TO_RIGHT" onAction="#VoirListe" prefHeight="26.0" prefWidth="250.0" promptText="Listes" style="-fx-background-color: #ffd135;" />
+            <TextField fx:id="textFieldSearch" onAction="#search" prefHeight="29.0" prefWidth="398.0" promptText="Ecire un titre ..." />
+            <ImageView fx:id="imvSearch" fitHeight="33.0" fitWidth="33.0" onMouseClicked="#search2" pickOnBounds="true" preserveRatio="true" />
+        </items>
+      </ToolBar>
+      <Pagination fx:id="pagination" layoutX="9.0" layoutY="162.0" maxPageIndicatorCount="3" prefHeight="457.0" prefWidth="924.0" />
+      <ImageView fx:id="imvTri" fitHeight="30.0" fitWidth="30.0" layoutX="903.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="793.0" layoutY="577.0" mnemonicParsing="false" onAction="#meilleurs" style="-fx-background-color: #ffd135;" text="Les meilleurs" />
+      <ImageView fx:id="imvLog" fitHeight="38.0" fitWidth="38.0" layoutX="14.0" layoutY="573.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imvMobile" fitHeight="38.0" fitWidth="38.0" layoutX="59.0" layoutY="573.0" onMouseClicked="#appMobile" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

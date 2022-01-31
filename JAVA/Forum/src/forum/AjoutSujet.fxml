@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="618.0" prefWidth="943.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="forum.AjoutSujetController">
+   <children>
+      <Pane prefHeight="173.0" prefWidth="980.0" style="-fx-background-color: #2D75E8;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="130.0" layoutY="44.0" text="Ouibike" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="105.0" text="Forum" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" layoutX="711.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../LOGO.png" />
+               </image></ImageView>
+      
+         </children>
+      </Pane>
+      <Label layoutX="62.0" layoutY="228.0" text="Sujet :" />
+      <Label layoutX="62.0" layoutY="285.0" text="Question :" />
+      <Label layoutX="62.0" layoutY="509.0" text="Ajouter une photo :" />
+      <TextField fx:id="topic" layoutX="131.0" layoutY="224.0" />
+      <TextArea fx:id="question" layoutX="131.0" layoutY="274.0" prefHeight="198.0" prefWidth="580.0" />
+      <Button fx:id="btnAjout" layoutX="813.0" layoutY="505.0" mnemonicParsing="false" onAction="#ajout" text="Ajouter" />
+      <TextField fx:id="inImg" layoutX="198.0" layoutY="505.0" prefHeight="26.0" prefWidth="157.0" />
+      <Button fx:id="btnImporter" layoutX="399.0" layoutY="505.0" mnemonicParsing="false" onAction="#ajoutImg" text="Importer" />
+      <Label layoutX="341.0" layoutY="228.0" text="Categorie :" />
+      <ComboBox fx:id="categorie" layoutX="443.0" layoutY="224.0" prefHeight="26.0" prefWidth="268.0" />
+      <Button fx:id="btnCateg" layoutX="789.0" layoutY="324.0" mnemonicParsing="false" onAction="#Bcategories" prefHeight="26.0" prefWidth="104.0" text="Categories" />
+      <Button fx:id="btnSujets" layoutX="790.0" layoutY="384.0" mnemonicParsing="false" onAction="#Bsujets" prefHeight="26.0" prefWidth="104.0" text="Sujets" />
+      <Label fx:id="confirmation" layoutX="364.0" layoutY="552.0" prefHeight="34.0" prefWidth="390.0" textFill="#e50202" />
+      <ImageView fx:id="imv1" fitHeight="45.0" fitWidth="45.0" layoutX="536.0" layoutY="496.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imv2" fitHeight="45.0" fitWidth="45.0" layoutX="601.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="imv3" fitHeight="45.0" fitWidth="45.0" layoutX="666.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
