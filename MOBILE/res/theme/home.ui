@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" name="home" cloudDestinationProperty="home" layout="BoxLayout" boxLayoutAxis="Y" >
+  <component type="Label" name="Label" cloudDestinationProperty="Label" text="Categories :" >
+  </component>
+  <component type="List" name="List" cloudDestinationProperty="List" >
+    <stringItem value="Technique/m&#xe9;canique v&#xe9;lo route" />
+    <stringItem value="Technique/m&#xe9;canique VTT" />
+    <stringItem value="Autre" />
+  </component>
+</component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="11" useXmlUI="false">
+    <legacyFont name="Font 1" />
+    <ui name="home" />
+    <image name="load.png"  />
+    <image name="message.png"  />
+    <image name="robot.png"  />
+    <theme name="Theme">
+        <val key="@includeNativeBool" value="true" />
+    </theme>
+    <image name="user2.png"  />
+</resource>
