@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Forum.jnlp">
+  <information>
+    <title>Forum</title>
+    <vendor>arous souhir</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Forum.jar" size="261354" download="eager" />
+    <jar href="lib\core-3.1.0.jar" size="538421" download="eager" />
+    <jar href="lib\mail-1.4.jar" size="388864" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Forum" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="forum.Forum"  name="Forum" />
+  <update check="always"/>
+</jnlp>
